@@ -15,9 +15,6 @@
 	</style>
 </head>
 <body>
-	<!-- Fireplace -->
-	<!-- <iframe src="https://www.youtube.com/embed/lGNXVhMLw8o?autoplay=1&loop=1&playlist=lGNXVhMLw8o&controls=0" frameborder="0" allowfullscreen></iframe> -->
-	<!-- Beach scene -->
 	<iframe frameborder="0" allowfullscreen></iframe>
 	<audio autoplay src="http://3303.live.streamtheworld.com:80/WWJAMDIALUP_SC"></audio>
 	<script>
@@ -26,9 +23,11 @@
 
 		var frame = document.getElementsByTagName("iframe")[0];
 		if(n < 3 || n > 8) {
+			// Set fireplace src
 			frame.setAttribute("src", "https://www.youtube.com/embed/lGNXVhMLw8o?autoplay=1&loop=1&playlist=lGNXVhMLw8o&controls=0&hd=1");
 		}
 		else {
+			// Set beach scene src
 			frame.setAttribute("src", "https://www.youtube.com/embed/qREKP9oijWI?autoplay=1&loop=1&playlist=qREKP9oijWI&controls=0&hd=1");
 		}
 	</script>
