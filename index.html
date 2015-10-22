@@ -15,13 +15,13 @@
 	</style>
 </head>
 <body>
-	<iframe frameborder="0" allowfullscreen></iframe>
-	<audio autoplay src="http://3303.live.streamtheworld.com:80/WWJAMDIALUP_SC"></audio>
+	<iframe id="vid" frameborder="0" allowfullscreen></iframe>
+	<audio id="aud" autoplay src="http://3303.live.streamtheworld.com:80/WWJAMDIALUP_SC"></audio>
 	<script>
 		var d = new Date();
 		var n = d.getMonth();
 
-		var frame = document.getElementsByTagName("iframe")[0];
+		var frame = document.getElementById("vid");
 		if(n < 3 || n > 8) {
 			// Set fireplace src
 			frame.setAttribute("src", "https://www.youtube.com/embed/lGNXVhMLw8o?autoplay=1&loop=1&playlist=lGNXVhMLw8o&controls=0&hd=1");
