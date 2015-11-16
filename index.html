@@ -3,7 +3,6 @@
 <head>
 	<title>Seasonside Radio</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
 </head>
 <body>
 	<iframe id="vid" frameborder="0" allowfullscreen></iframe>
@@ -21,11 +20,6 @@
 			// Set beach scene src
 			frame.setAttribute("src", "http://www.youtube.com/embed/qREKP9oijWI?autoplay=1&loop=1&playlist=qREKP9oijWI&controls=0&hd=1");
 		}
-
-		window.mediaElement = document.getElementById('aud');
-		window.mediaManager = new cast.receiver.MediaManager(window.mediaElement);
-		window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
-		window.castReceiverManager.start();
 	</script>
 </body>
 </html>
